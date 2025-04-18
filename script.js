@@ -401,3 +401,20 @@ window.addEventListener("resize", () => {
 // === [ Initialize First Render + Animation Loop ] ===
 updateVisibleItems();
 animate();
+
+// === [ GSAP Fade-Out Loader on Full Page Load ] ===
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  if (!loader) return;
+
+  // Animate the loader offscreen with GSAP
+  gsap.to(loader, {
+    opacity: 0,
+    scale: 1.1,
+    filter: "blur(12px)",
+    delay: 0.3,
+    duration: 5,
+    ease: "power1.out",
+    onComplete: () => loader.remove(),
+  });
+});

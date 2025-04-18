@@ -13,6 +13,23 @@ body {
   overflow: hidden;
 }
 
+/* loading overlay styles */
+.loader {
+  position: fixed;
+  inset: 0;
+  /* background: #111; */
+  background: #e3e3db;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  /* Optional styling: */
+  letter-spacing: 0.05em;
+}
+
 a,
 p {
   display: block;
