@@ -125,11 +125,8 @@ function updateVisibleItems() {
 
       // Optional: Preload full image in the background
       const preload = new Image();
-      preload.src = `/img/img${itemNum}.jpg`; // preload large version quietly
+      preload.src = `/img${itemNum}.jpg`; // preload large version quietly
 
-      //   const img = document.createElement("img");
-      //   img.src = `/img${itemNum}.jpg`;
-      //   img.alt = `Image ${itemNum}`;
       item.appendChild(img);
 
       item.addEventListener("click", (e) => {
