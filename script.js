@@ -117,8 +117,19 @@ function updateVisibleItems() {
 
       const itemNum = (Math.abs(row * columns + col) % itemCount) + 1;
       const img = document.createElement("img");
-      img.src = `/img${itemNum}.jpg`;
+      img.src = `/thumbs/thumb${itemNum}.jpeg`;
       img.alt = `Image ${itemNum}`;
+
+      // Optional: Lazy load to reduce memory use
+      img.loading = "lazy";
+
+      // Optional: Preload full image in the background
+      const preload = new Image();
+      preload.src = `/img/img${itemNum}.jpg`; // preload large version quietly
+
+      //   const img = document.createElement("img");
+      //   img.src = `/img${itemNum}.jpg`;
+      //   img.alt = `Image ${itemNum}`;
       item.appendChild(img);
 
       item.addEventListener("click", (e) => {
