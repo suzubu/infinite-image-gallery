@@ -116,6 +116,8 @@ function updateVisibleItems() {
       item.dataset.row = row;
 
       const itemNum = (Math.abs(row * columns + col) % itemCount) + 1;
+      item.dataset.id = itemNum; // store index directly on item
+
       const img = document.createElement("img");
       img.src = `/thumbs/thumb${itemNum}.jpeg`;
       img.alt = `Image ${itemNum}`;
@@ -164,10 +166,9 @@ function expandItem(item) {
   canDrag = false;
   container.style.cursor = "auto";
 
-  const imgSrc = item.querySelector("img").src;
-  const imgMatch = imgSrc.match(/\/img(\d+)\.jpg/);
-  const imgNum = imgMatch ? parseInt(imgMatch[1]) : 1;
+  const imgNum = parseInt(item.dataset.id);
   const titleIndex = (imgNum - 1) % items.length;
+
 
   setAndAnimateTitle(items[titleIndex]);
   item.style.visibility = "hidden";
@@ -409,8 +410,8 @@ window.addEventListener("load", () => {
     opacity: 0,
     scale: 1.1,
     filter: "blur(12px)",
-    delay: 0.3,
-    duration: 5,
+    delay: 2,
+    duration: 3,
     ease: "power1.out",
     onComplete: () => loader.remove(),
   });
