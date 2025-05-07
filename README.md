@@ -52,6 +52,7 @@ open index.html
 
 ## 📚 Inspiration / Credits
 
+- [Codegrid](https://www.youtube.com/watch?v=Xhb5vRydSj4&t=754s)
 - Grid concept and draggable inertia inspired by [Niklas von Hertzen](https://github.com/niklasvh/infinite-canvas)
 - Expansion/zoom feel influenced by [Framer motion galleries](https://www.framer.com/motion/)
 - Staggered text motion style from [Studio Freight](https://studiofreight.com/)
