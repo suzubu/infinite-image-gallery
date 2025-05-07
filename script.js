@@ -169,7 +169,6 @@ function expandItem(item) {
   const imgNum = parseInt(item.dataset.id);
   const titleIndex = (imgNum - 1) % items.length;
 
-
   setAndAnimateTitle(items[titleIndex]);
   item.style.visibility = "hidden";
 
@@ -410,8 +409,8 @@ window.addEventListener("load", () => {
     opacity: 0,
     scale: 1.1,
     filter: "blur(12px)",
-    delay: 2,
-    duration: 3,
+    delay: 1,
+    duration: 1,
     ease: "power1.out",
     onComplete: () => loader.remove(),
   });

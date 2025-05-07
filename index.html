@@ -11,11 +11,13 @@
 </head>
 
 <body>
-    <!-- loading overlay while images render -->
+    <!-- === Loading overlay shown while images render === -->
     <div class="loader">WELCOME</div>
+
+    <!-- === Navigation bar with brand and links === -->
     <nav>
         <div class="logo">
-            <a href="#">CommonBlock</a>
+            <a href="#">CommonBlock</a> <!-- Branding link -->
         </div>
         <div class="links">
             <a href="#">About</a>
@@ -27,19 +29,26 @@
             </div>
         </div>
     </nav>
+
+    <!-- === Footer information === -->
     <footer>
         <p>Experiment 123</p>
         <p>Infinite Gallery</p>
     </footer>
 
+    <!-- === Main interaction canvas and overlay === -->
     <div class="container">
         <div class="canvas"></div>
-        <div class="overlay"></div>
+        <!-- Will hold dynamically generated images -->
+        <div class="overlay"></div> <!-- Layer for effects or click targets -->
     </div>
 
+    <!-- === Dynamic project title display === -->
     <div class="project-title">
         <p></p>
     </div>
+
+    <!-- === JavaScript entry point === -->
     <script type="module"
             src="/script.js"></script>
 </body>
