@@ -1,4 +1,4 @@
-# 🖼️ Infinite Draggable Image Gallery
+# 🖼️ Infinite Image Gallery - Draggable!
 
 > A scrollable, draggable image grid with inertia, grid virtualization, and interactive expansion. Built with vanilla JavaScript, GSAP, and SplitType.
 
