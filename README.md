@@ -1,4 +1,4 @@
-# 🖼️ Infinite Image Gallery - Draggable!
+# 🖼️ Infinite Image Gallery Feature
 
 > A scrollable, draggable image grid with inertia, grid virtualization, and interactive expansion. Built with vanilla JavaScript, GSAP, and SplitType.
 
@@ -14,7 +14,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/suzubu/infinite-image-gallery.git
+git clone https://github.com/suzubu/infinite-image-gallery-feature.git
 
 # 2. Open the HTML file in your browser
 open index.html
